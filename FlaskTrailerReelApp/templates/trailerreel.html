@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <div class="home-div">
+    <a class = "home-link" href="{{ url_for('welcome') }}">Home</a>
+  </div>
+  <h2>Trailer Reel</h2>
+  <p class="yt-title">{{ trailerdetails['title'].title() }}</p>
+  <iframe width="645" height="340" src="{{ yt_embed }}" frameborder="1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <h3 class="next-up">Similar Trailers</h3>
+  <div>
+    {% for index in indices %}
+      <li><a href="{{ url_for('watchtrailer', yturl= list_of_ytvidurls[index] ) }}">{{ list_of_titles[index] | truncate(60) }}</a></li>
+    {% endfor %}
+  </div>
+{% endblock %}

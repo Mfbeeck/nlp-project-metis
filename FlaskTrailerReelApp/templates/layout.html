@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <title>Trailer Reel</title>
+    <style>
+      @import url(http://fonts.googleapis.com/css?family=Amatic+SC:700);
+
+      body{
+          text-align: center;
+      }
+
+      iframe {
+          border: solid 2px;
+      }
+
+      p {
+          font-size: 1.5em;
+      }
+
+      p.yt-title {
+          font-size: 1.5em;
+          margin-top: 8px;
+          margin-bottom: 8px;
+      }
+
+      h1 {
+          font-family: 'Amatic SC', cursive;
+          font-weight: normal;
+          padding: 0px;
+          color: #e24444;
+          font-size: 4.5em;
+          margin-bottom: 20px;
+      }
+
+      h1:hover {
+          cursor: default;
+      }
+
+      h2 {
+          font-family: 'Amatic SC', cursive;
+          font-weight: normal;
+          margin-bottom: 0px;
+          color: #e24444;
+          font-size: 3em;
+          margin-right: 50px;
+      }
+
+      h3 {
+        font-family: 'Times New Roman'
+      }
+
+      li {
+        list-style: none;
+      }
+
+      div.home-div {
+        float: left;
+      }
+
+      a.home-link {
+        font-family: 'Amatic SC', cursive;
+        font-weight: normal;
+        color: #e24444;
+        font-size: 1.6em;
+        padding: 10px;
+        background-color: #e6e6e6;
+        text-decoration: none;
+      }
+
+      a.home-link:hover {
+        background-color: #e6e6e6;
+        text-decoration: underline;
+      }
+
+      li {
+        padding: 5px;
+      }
+
+      li a {
+        text-decoration: none;
+        color: #dd2222;
+      }
+
+      li a:hover {
+        text-decoration: underline;
+      }
+
+      h3.next-up{
+        font-family: 'Amatic SC', cursive;
+        font-weight: normal;
+        text-decoration:underline;
+        margin-bottom: 10px;
+        margin-top: 12px;
+        font-size: 1.6em;
+      }
+
+      input[type=text], select {
+          width: 30%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          font-size: .9em;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+      }
+
+      input[type=submit] {
+          width: 10%;
+          background-color: black;
+          color: white;
+          padding: 8px 17px;
+          margin: 2px 0;
+          font-size: 1.2em;
+          font-family: 'Amatic SC', cursive;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+
+      input[type=submit]:hover {
+          background-color: #262626;
+      }
+
+
+    </style>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='film.png') }}">
+
+  </head>
+  <body>
+   {% block body %}{% endblock %}
+
+  </body>
+</html>
